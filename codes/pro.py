@@ -7,9 +7,9 @@ ctr_0 = np.count_nonzero(x==0)
 ctr_2 = np.count_nonzero(x==2)
 ctr_1 = N - ctr_0 - ctr_2
 
-pr_0 = 0.25     
-pr_1 = 0.5
-pr_2 = 0.25
+pr_0 = 0.25     #probability of getting zero head
+pr_1 = 0.5      #probability of getting one head
+pr_2 = 0.25     #probability of getting two heads
 
 ################################
 # pr(zero head) = T T          #
