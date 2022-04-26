@@ -1,0 +1,50 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\title{Assignment 4}
+\author{JARPULA BHANU PRASAD - AI21BTECH11015}
+\date{April 2022}
+\newcommand\Mycomb[2][^n]{\prescript{#1\mkern-0.5mu}{}C_{#2}}
+\begin{document}
+\maketitle
+\noindent \Large\underline{Download codes from}:\\
+\noindent \large Download python code from - \href{https://github.com/jarpula-Bhanu/Assignment-4/blob/main/codes/probability.py}{Python}\\ Download latex code from - \href{https://github.com/jarpula-Bhanu/Assignment-4/blob/main/Assignment4.tex}{Latex}
+\section{\large\underline{Problem-CBSE-9th Q)example 2}}
+\large \noindent Q)Two coins are tossed simultaneously 500 times, and we get
+\begin{align*}
+Two \hspace{2mm} heads : 105 \hspace{2mm} times \\
+One \hspace{2mm} head : 275 \hspace{2mm} times \\
+No \hspace{2mm} head : 120 \hspace{2mm} times
+\end{align*}
+Find the probability of occurrence of each of these events.
+
+\section{\large\underline{Solution}}
+\noindent \underline{Theoretical probability}:\\
+\noindent If two coins are thrown there are four outcomes \\
+\{H H\}, \{T H\}, \{H T\} and \{T T\} \\
+Now, probability of getting no head 
+\begin{align}
+&Pr(No \hspace{2mm} head) = \frac{\Mycomb[2]{0}}{4} = \frac{1}{4}
+\end{align}
+Probability of getting one head 
+\begin{align}
+&Pr(One \hspace{2mm} head) = \frac{\Mycomb[2]{1}}{4} = \frac{1}{2}
+\end{align}
+Probability of getting two head 
+\begin{align}
+&Pr(Two \hspace{2mm} head) = \frac{\Mycomb[2]{2}}{4} = \frac{1}{4}
+\end{align}
+\noindent \underline{Practical probability}:\\
+\noindent Denote the outcome of the experiment by a random variable $X$ $\in$ \{0,1,2\}.\\ Where $X$ = 0 denotes occurrence of two heads, $X$ = 1 denotes occurrence of one head and $X$ = 2 denotes the occurrence of no head. Then,
+\begin{align}
+Pr(X = 0) = \frac{105}{500} = 0.21 \\
+Pr(X = 1) = \frac{105}{500} = 0.55 \\
+Pr(X = 2) = \frac{105}{500} = 0.24 
+\end{align}\\
+Observe that 
+\begin{align*}
+Pr(X = 0) + Pr(X = 1) + Pr(X = 2) = 1
+\end{align*}
+ Also $X$ = 0 ,$X$ = 1 and $X$ = 2 cover all the outcomes of a trial.
+\end{document}
